@@ -24,7 +24,7 @@ if len(sys.argv) > 1:
             with urlopen(sys.argv[1], timeout=2) as response:
                 actual = response.read().decode("utf-8")
             break
-        except URLError:
+        except (URLError, ConnectionError, TimeoutError):
             if attempt == 9:
                 raise
             time.sleep(1)
