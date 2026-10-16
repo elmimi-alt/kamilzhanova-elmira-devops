@@ -1,0 +1,5 @@
+Name: Elmira
+Surname: Kamilzhanova
+Group: IT2-2304
+Student ID: 37713
+Course: DevOps
